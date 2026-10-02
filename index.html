@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of David Aguoru — Cyber Security & Digital Forensics graduate, security innovator and founder of DaveTraceTech and DAPilot.">
+<title>David Aguoru | Cybersecurity & Digital Innovation</title>
+<style>
+:root{
+  --bg:#020611;--bg2:#061127;--panel:#09162c;--panel2:#07101f;
+  --text:#eef7ff;--muted:#9db1c8;--blue:#167cff;--cyan:#21d8ff;
+  --line:rgba(83,171,255,.20);--max:1180px;--r:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);line-height:1.65;background:
+radial-gradient(circle at 76% 4%,rgba(15,105,255,.18),transparent 27%),
+radial-gradient(circle at 12% 30%,rgba(0,218,255,.08),transparent 22%),
+linear-gradient(180deg,#020611,#050b17 48%,#030712)}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:100;background:rgba(2,6,17,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(75,156,255,.12)}
+nav{height:100px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em}.logo-badge{width:40px;height:40px;border:1px solid rgba(33,216,255,.45);border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(22,124,255,.24),rgba(33,216,255,.05));box-shadow:0 0 26px rgba(0,157,255,.16)}.logo-badge span{font-family:Georgia,serif;font-size:23px;background:linear-gradient(#41e3ff,#126dff);-webkit-background-clip:text;color:transparent}
+.links{display:flex;align-items:center;gap:23px;font-size:.92rem;color:#bfd0e4}.links a:hover{color:white}.links .cta{padding:9px 15px;border:1px solid rgba(33,216,255,.3);border-radius:999px;background:rgba(22,124,255,.08)}
+.hero{min-height:calc(100vh - 100px);display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:58px;padding:74px 0 86px}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 13px;border-radius:999px;border:1px solid rgba(33,216,255,.2);background:rgba(14,97,181,.09);font-size:.8rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#c8f6ff}.pulse{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 13px var(--cyan)}
+h1{font-size:clamp(3.3rem,7vw,6.4rem);letter-spacing:-.055em;line-height:.92;margin:24px 0 22px}.grad{background:linear-gradient(135deg,#fff 15%,#aedcff 55%,#21d8ff);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:clamp(1.05rem,2vw,1.32rem);max-width:740px;color:#b5c6d8;margin:0 0 29px}.hero p strong{color:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:13px}.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 18px;border-radius:13px;font-weight:750;font-size:.93rem;transition:.2s}.primary{background:linear-gradient(135deg,#0a72ff,#13b9ff);box-shadow:0 12px 30px rgba(0,121,255,.28)}.primary:hover{transform:translateY(-2px)}.secondary{border:1px solid rgba(153,198,240,.2);background:rgba(255,255,255,.035)}.secondary:hover{border-color:rgba(33,216,255,.42)}
+.meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:30px;color:#829bb6;font-size:.82rem}.meta b{display:block;color:#eaf6ff;font-size:.98rem}
+.visual{position:relative;display:grid;place-items:center;min-height:500px}.glow{position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(0,148,255,.22),rgba(0,148,255,.05) 48%,transparent 70%)}.brand-card{position:relative;width:min(100%,510px);padding:19px;border-radius:32px;background:linear-gradient(145deg,rgba(13,29,58,.8),rgba(4,10,23,.58));border:1px solid rgba(76,171,255,.22);box-shadow:0 24px 70px rgba(0,0,0,.38);transform:rotate(1deg)}.brand-card img{width:100%;display:block;border-radius:21px}
+.profile-photo{position:absolute;right:-22px;bottom:8px;width:145px;height:145px;object-fit:cover;border-radius:50%;border:4px solid #07101f;box-shadow:0 0 0 1px rgba(33,216,255,.45),0 18px 45px rgba(0,0,0,.5)}
+@media(max-width:540px){.profile-photo{width:105px;height:105px;right:4px;bottom:8px}}.chip{position:absolute;padding:10px 14px;border-radius:999px;background:rgba(4,15,32,.86);border:1px solid rgba(33,216,255,.23);backdrop-filter:blur(10px);font-size:.78rem;color:#d7f8ff;box-shadow:0 10px 25px rgba(0,0,0,.3)}.c1{top:15%;right:-14px}.c2{bottom:15%;left:-16px}
+section{padding:92px 0}.kicker{color:#58e1ff;text-transform:uppercase;font-size:.76rem;font-weight:800;letter-spacing:.16em;margin-bottom:8px}h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.035em;line-height:1.08;margin:0 0 16px}.lead{max-width:790px;color:#9fb4ca;font-size:1.05rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}.panel{padding:29px;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(145deg,rgba(10,27,52,.75),rgba(6,15,30,.64));box-shadow:0 18px 52px rgba(0,0,0,.24)}.panel h3{font-size:1.28rem;margin:0 0 10px}.panel p{color:#9fb2c8;margin:0}.copy p{color:#b7c7d8;margin:0 0 17px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:16px;border:1px solid rgba(82,171,255,.16);border-radius:16px;background:rgba(255,255,255,.025)}.fact small{display:block;color:#7e97b1;margin-bottom:4px}.fact strong{font-size:.95rem}
+.skillset{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.skill{padding:9px 12px;border-radius:999px;border:1px solid rgba(48,174,255,.2);background:rgba(17,115,209,.09);color:#cbeaff;font-size:.85rem}
+.timeline{margin-top:40px;display:grid;gap:16px}.item{display:grid;grid-template-columns:155px 1fr;gap:22px;padding:23px 0;border-top:1px solid rgba(111,173,231,.14)}.item:first-child{border-top:0}.when{color:#70dfff;font-size:.82rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.item h3{margin:0 0 7px;font-size:1.2rem}.item p{margin:0;color:#9fb3c8}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:23px;margin-top:40px}.project{min-height:430px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:270px;height:270px;border-radius:50%;right:-115px;top:-115px;background:radial-gradient(circle,rgba(33,216,255,.15),transparent 70%)}.project .num{font-size:.74rem;color:#63e5ff;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.project h3{font-size:2.15rem;line-height:1.05;margin:15px 0 13px}.project p{color:#a8bad0;max-width:510px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.tag{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.035);border:1px solid rgba(121,181,238,.14);font-size:.78rem;color:#b9cce1}.project-link{display:inline-flex;align-items:center;gap:8px;color:#6ce5ff;font-weight:800;margin-top:12px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.value{padding:25px;border-radius:20px;background:rgba(255,255,255,.025);border:1px solid rgba(93,173,243,.16)}.value b{display:block;font-size:1.05rem;margin-bottom:7px}.value span{color:#98acc3;font-size:.93rem}
+.contact{padding:38px;border-radius:30px;background:linear-gradient(135deg,rgba(10,91,183,.25),rgba(7,19,41,.82));border:1px solid rgba(44,190,255,.25);display:flex;align-items:center;justify-content:space-between;gap:30px}.contact p{margin:7px 0 0;color:#a8bdd2;max-width:690px}
+footer{padding:34px 0 50px;color:#7f96ad;font-size:.85rem;border-top:1px solid rgba(104,168,230,.1);margin-top:70px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.social{display:flex;gap:17px}.social a:hover{color:white}
+@media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:58px}.visual{min-height:390px}.grid2,.projects{grid-template-columns:1fr}.values{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:5px}.contact{align-items:flex-start;flex-direction:column}.c1{right:3px}.c2{left:3px}}
+@media(max-width:540px){.wrap{width:min(100% - 26px,var(--max))}.hero h1{font-size:3.3rem}.facts{grid-template-columns:1fr}.brand-card{padding:12px}.visual{min-height:320px}.meta{gap:15px}}
+
+.module-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.module-card{padding:18px;border-radius:16px;border:1px solid rgba(82,171,255,.16);background:rgba(255,255,255,.025)}
+.module-card h4{margin:0 0 10px;font-size:.95rem;color:#dff6ff}
+.module-card ul{margin:0;padding-left:18px;color:#9fb3c8}
+.module-card li{margin:6px 0}
+@media(max-width:900px){.module-grid{grid-template-columns:1fr}}
+
+
+.current-education{position:relative}
+.current-education:before{content:"";position:absolute;left:-8px;top:22px;width:4px;height:calc(100% - 44px);border-radius:999px;background:linear-gradient(180deg,#21d8ff,#167cff);box-shadow:0 0 18px rgba(33,216,255,.45)}
+.current-badge{display:inline-block;margin-top:8px;padding:5px 9px;border-radius:999px;background:rgba(33,216,255,.12);border:1px solid rgba(33,216,255,.35);color:#79ecff;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase}
+
+
+.navbar-brand{display:flex;align-items:center;padding:0}
+.navbar-brand img{height:88px;width:auto;max-width:290px;object-fit:contain;border-radius:10px}
+@media(max-width:540px){.navbar-brand img{height:68px;max-width:220px}}
+
+
+.portrait-card{max-width:430px;padding:14px;transform:none}
+.portrait-card .hero-portrait{width:100%;height:auto;display:block;border-radius:22px;object-fit:cover}
+
+
+.cv-link{padding:9px 14px;border-radius:999px;border:1px solid rgba(33,216,255,.28);background:rgba(22,124,255,.08);color:#dff8ff!important;font-weight:750}
+.menu-toggle{display:none;width:46px;height:42px;border:1px solid rgba(33,216,255,.25);border-radius:12px;background:rgba(255,255,255,.035);align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}
+.menu-toggle span{display:block;width:20px;height:2px;background:#dff8ff;border-radius:999px;transition:.2s ease}
+.project-logo{display:block;width:100%;height:165px;object-fit:contain;object-position:center;margin:0 0 22px;padding:10px;border-radius:18px;background:linear-gradient(145deg,rgba(2,8,20,.72),rgba(5,16,35,.45));border:1px solid rgba(75,170,255,.16)}
+.dapilot-logo{height:180px}
+.project:hover .project-logo{transform:translateY(-2px);transition:.2s ease}
+
+@media(max-width:900px){
+  header nav.wrap{position:relative}
+  .menu-toggle{display:flex;margin-left:auto}
+  .links{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:calc(100% + 1px);
+    padding:16px 20px 20px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:7px;
+    background:rgba(2,6,17,.98);
+    border:1px solid rgba(75,156,255,.16);
+    border-top:0;
+    border-radius:0 0 18px 18px;
+    box-shadow:0 22px 45px rgba(0,0,0,.45);
+    backdrop-filter:blur(18px);
+  }
+  .links.open{display:flex}
+  .links a{display:block;padding:11px 12px;border-radius:10px}
+  .links a:hover{background:rgba(255,255,255,.045)}
+  .links .cta,.links .cv-link{text-align:center;margin-top:4px}
+  .menu-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-toggle.active span:nth-child(2){opacity:0}
+  .menu-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+@media(max-width:540px){
+  header nav.wrap{height:84px}
+  .navbar-brand img{height:66px;max-width:205px}
+  .project-logo,.dapilot-logo{height:140px}
+}
+
+
+.experience-card{margin-top:38px;padding:32px;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(145deg,rgba(10,27,52,.78),rgba(6,15,30,.68));box-shadow:0 18px 52px rgba(0,0,0,.24)}
+.experience-head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid rgba(111,173,231,.14)}
+.experience-head h3{font-size:1.65rem;margin:8px 0 2px;letter-spacing:-.02em}
+.experience-type{display:inline-flex;padding:6px 10px;border-radius:999px;background:rgba(33,216,255,.10);border:1px solid rgba(33,216,255,.28);color:#70e8ff;font-size:.72rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.company{margin:0;color:#a9bfd5;font-weight:650}
+.experience-date{color:#70dfff;font-size:.85rem;font-weight:800;letter-spacing:.04em;text-align:right;white-space:nowrap}
+.experience-list{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:13px 22px}
+.experience-list li{position:relative;padding:14px 14px 14px 34px;border-radius:14px;background:rgba(255,255,255,.022);border:1px solid rgba(82,171,255,.10);color:#a9bdd1}
+.experience-list li:before{content:"";position:absolute;left:15px;top:22px;width:7px;height:7px;border-radius:50%;background:#21d8ff;box-shadow:0 0 10px rgba(33,216,255,.45)}
+@media(max-width:760px){
+  .experience-head{flex-direction:column}
+  .experience-date{text-align:left;white-space:normal}
+  .experience-list{grid-template-columns:1fr}
+}
+
+
+.nav-headline{font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8ca5bf;white-space:nowrap}
+.credential-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.credential-card{overflow:hidden;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(145deg,rgba(10,27,52,.76),rgba(6,15,30,.66));box-shadow:0 18px 52px rgba(0,0,0,.24)}
+.credential-image-wrap{height:310px;padding:16px;background:#030916;display:flex;align-items:center;justify-content:center;border-bottom:1px solid rgba(82,171,255,.14)}
+.credential-image-wrap img{width:100%;height:100%;object-fit:contain;border-radius:12px}
+.credential-content{padding:25px}.credential-content h3{font-size:1.35rem;margin:13px 0 3px}.credential-content p{color:#9fb3c8}
+.credential-org{color:#d9eaff!important;font-weight:700}
+.credential-date{display:inline-flex;padding:5px 9px;border-radius:999px;background:rgba(33,216,255,.09);border:1px solid rgba(33,216,255,.2);color:#6fe7ff;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:1120px){.nav-headline{display:none}}
+@media(max-width:760px){.credential-grid{grid-template-columns:1fr}.credential-image-wrap{height:270px}}
+
+
+.services-layout{display:grid;grid-template-columns:.92fr 1.08fr;gap:28px;align-items:start;margin-top:40px}
+.services-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.service-item{padding:18px;border-radius:16px;border:1px solid rgba(82,171,255,.13);background:rgba(255,255,255,.024);transition:.2s ease}
+.service-item:hover{transform:translateY(-2px);border-color:rgba(33,216,255,.28);background:rgba(33,216,255,.035)}
+.service-item strong{display:block;color:#e8f6ff;margin-bottom:7px;font-size:.94rem}
+.service-item span{display:block;color:#8fa9c1;font-size:.82rem;line-height:1.55}
+.service-form-card{padding:30px;border-radius:var(--r);border:1px solid rgba(33,216,255,.19);background:linear-gradient(145deg,rgba(10,27,52,.88),rgba(5,13,28,.82));box-shadow:0 22px 60px rgba(0,0,0,.28)}
+.form-heading{margin-bottom:24px}.form-heading h3{font-size:1.55rem;margin:10px 0 7px}.form-heading p{color:#91a9c0;margin:0}
+.form-status{display:inline-flex;padding:5px 9px;border-radius:999px;background:rgba(33,216,255,.09);border:1px solid rgba(33,216,255,.23);color:#70e8ff;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.service-form{display:grid;gap:10px}.service-form label{font-size:.78rem;font-weight:800;color:#c8d9e9;margin-top:5px}
+.service-form input,.service-form select,.service-form textarea{width:100%;box-sizing:border-box;padding:13px 14px;border-radius:12px;border:1px solid rgba(105,169,226,.18);background:#071222;color:#eaf7ff;font:inherit;outline:none;transition:.2s ease}
+.service-form input::placeholder,.service-form textarea::placeholder{color:#637d96}
+.service-form input:focus,.service-form select:focus,.service-form textarea:focus{border-color:rgba(33,216,255,.65);box-shadow:0 0 0 3px rgba(33,216,255,.08)}
+.service-form select{cursor:pointer}.service-form textarea{resize:vertical;min-height:145px}
+.service-submit{margin-top:10px;padding:14px 18px;border:0;border-radius:12px;background:linear-gradient(90deg,#167cff,#21d8ff);color:#02101d;font-weight:900;font-size:.9rem;cursor:pointer;transition:.2s ease}
+.service-submit:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(22,124,255,.2)}
+.service-submit span{margin-left:5px}.form-note{text-align:center;color:#668199!important;font-size:.72rem!important;margin:3px 0 0!important}
+@media(max-width:960px){.services-layout{grid-template-columns:1fr}.services-list{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.services-list{grid-template-columns:1fr}.service-form-card{padding:22px}}
+
+</style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="logo navbar-brand" href="#top" aria-label="David Aguoru home"><img src="DA_brand.png" alt="David Aguoru brand logo"></a>
+    <span class="nav-headline">Cybersecurity • Digital Forensics • Technology</span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="links" id="site-menu">
+      <a href="#about">About</a><a href="#journey">Journey</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#credentials">Credentials</a><a href="#projects">Projects</a>
+      
+      <a class="cta" href="#contact">Connect</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+  <div>
+    <div class="eyebrow"><span class="pulse"></span> Cybersecurity • Digital Forensics • Innovation</div>
+    <h1>David<br><span class="grad">Aguoru.</span></h1>
+    <p><strong>Cyber Security & Digital Forensics graduate, security-focused builder and early-stage founder</strong> developing practical ideas around fraud prevention, SOC workflows and digital trust.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore Projects →</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/david-aguoru-a01a0b240" target="_blank">View LinkedIn ↗</a>
+      <a class="btn secondary" href="https://github.com/dcaguoru-cyber" target="_blank">View GitHub ↗</a>
+      <a class="btn secondary" href="David_Aguoru_CV.docx" download>Download CV ↓</a>
+    </div>
+    <div class="meta">
+      <span><b>2024 Bright Ideas Finalist</b>Startup innovation experience</span>
+      <span><b>UK-based</b>Cybersecurity & technology</span>
+    </div>
+  </div>
+  <div class="visual">
+    <div class="glow"></div>
+    <div class="brand-card portrait-card">
+      <img class="hero-portrait" src="profile.jpg" alt="Portrait of David Aguoru">
+    </div>
+    
+  </div>
+</section>
+
+<section id="about"><div class="wrap">
+  <div class="kicker">Profile</div><h2>Cybersecurity knowledge with an entrepreneurial edge.</h2>
+  <p class="lead">David Aguoru combines academic training in cyber security and digital forensics with hands-on experimentation in fraud prevention, SOC tooling, web development and business-focused technology projects.</p>
+  <div class="grid2">
+    <div class="panel copy">
+      <h3>About David</h3>
+      <p>David is a UK-based Cyber Security and Digital Forensics graduate from Kingston University. His interests sit at the intersection of security operations, digital investigations, network and information security, fraud prevention, OSINT and emerging technologies.</p>
+      <p>Alongside his academic development, he has built and publicly documented early-stage technology concepts, turning ideas into working front-end prototypes, GitHub repositories, product documentation and investor-style narratives.</p>
+      <p>His approach focuses on translating technical security concepts into solutions that are understandable, usable and commercially relevant.</p>
+    </div>
+    <div class="panel">
+      <h3>Profile at a glance</h3>
+      <div class="facts">
+        <div class="fact"><small>Education</small><strong>Rutlish School → RR6 → Kingston University → Current MSc</strong></div>
+        <div class="fact"><small>Current Academic Focus</small><strong>Cyber Security &amp; Digital Forensics</strong></div>
+        <div class="fact"><small>Primary Focus</small><strong>Cybersecurity & Digital Investigations</strong></div>
+        <div class="fact"><small>Builder Focus</small><strong>Fraud Prevention & SOC Tools</strong></div>
+        <div class="fact"><small>Innovation</small><strong>2024 Bright Ideas Finalist</strong></div>
+        <div class="fact"><small>Technical Presence</small><strong>GitHub-hosted prototypes</strong></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="journey"><div class="wrap">
+  <div class="kicker">Education</div>
+  <h2>Education path.</h2>
+  <p class="lead">David’s education path reflects a steady progression from secondary education, through a multidisciplinary Level 3 programme and a BSc in Cyber Security & Digital Forensics, to his current MSc in Network and Information Security with Management and Professional Placement.</p>
+
+  <div class="timeline">
+
+    <div class="item">
+      <div class="when">Sep 2016 – Jun 2021</div>
+      <div>
+        <h3>Rutlish School</h3>
+        <p><strong>GCSEs</strong></p>
+        <p style="margin-top:10px;"><strong>Subjects:</strong> Mathematics, English, Double Science Higher, Religious Education, French, Geography, Computer Science and Business Studies.</p>
+        <p style="margin-top:10px;"><strong>Activities &amp; Societies:</strong> Computer Science Afterschool Club.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Sep 2021 – Jun 2023</div>
+      <div>
+        <h3>RR6 (Rutlish &amp; Ricards Sixth Form)</h3>
+        <p><strong>BTEC Level 3 Extended Diploma</strong></p>
+        <p style="margin-top:10px;">Business Studies | Information Technology | Applied Science</p>
+        <p style="margin-top:10px;"><strong>Activities &amp; Societies:</strong> National Citizens Service, Football and Basketball Enrichment activities.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Sep 2023 – Jun 2026</div>
+      <div>
+        <h3>Kingston University</h3>
+        <p><strong>Bachelor of Science (BS), Cyber Security &amp; Digital Forensics</strong></p>
+
+        <p style="margin-top:12px;"><strong>Activities &amp; Societies:</strong> Cyber Security Society Member, KU Enterprise Education, Afro-Caribbean Society Member, KU Elevate Programme, KU American Football, KU Football and KU Entrepreneurs Society.</p>
+
+        <div class="module-grid">
+          <div class="module-card">
+            <h4>Year 1 Modules</h4>
+            <ul>
+              <li>Computing Fundamentals</li>
+              <li>Cyber Crime &amp; Digital Forensics</li>
+              <li>Professional Environments 1</li>
+              <li>Programming 1</li>
+            </ul>
+          </div>
+
+          <div class="module-card">
+            <h4>Year 2 Modules</h4>
+            <ul>
+              <li>Computing Systems</li>
+              <li>Ethical Hacking</li>
+              <li>Networking Concepts</li>
+              <li>Professional Environments 2</li>
+            </ul>
+          </div>
+
+          <div class="module-card">
+            <h4>Year 3 Modules</h4>
+            <ul>
+              <li>Cryptography and Network Security</li>
+              <li>Future Skills</li>
+              <li>Internet Services and Protocols</li>
+              <li>Individual Project</li>
+              <li>Threat Hunting, Analysis and Mitigation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item current-education">
+      <div class="when">2026 – 2028<br><span class="current-badge">Current</span></div>
+      <div>
+        <h3>Kingston University</h3>
+        <p><strong>Master of Science (MSc), Network and Information Security with Management w/ Professional Placement</strong></p>
+
+        <p style="margin-top:12px;"><strong>Activities &amp; Societies:</strong> KU Entrepreneurs Society, KU Cyber Society.</p>
+
+        <div class="module-grid">
+          <div class="module-card">
+            <h4>Year 1 Modules</h4>
+            <ul>
+              <li>Cryptography and Applications</li>
+              <li>Network and Information Security</li>
+              <li>Business in Practice</li>
+              <li>Advanced Data Communication and AI</li>
+              <li>Project Dissertation</li>
+            </ul>
+          </div>
+
+          <div class="module-card">
+            <h4>Year 2</h4>
+            <ul>
+              <li>Professional Placement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div></section>
+
+
+<section id="experience"><div class="wrap">
+  <div class="kicker">Professional Experience</div>
+  <h2>Hands-on IT &amp; systems experience.</h2>
+  <p class="lead">Practical experience supporting users, business systems, digital operations and web services in a customer-facing technology environment.</p>
+
+  <div class="experience-card">
+    <div class="experience-head">
+      <div>
+        <span class="experience-type">Part Time</span>
+        <h3>System Administrator</h3>
+        <p class="company">Chivic London Limited</p>
+      </div>
+      <div class="experience-date">April 2025 – September 2026</div>
+    </div>
+
+    <ul class="experience-list">
+      <li>Provided technical support for WhatsApp desktop, assisting customers with biometric authentication, account linking, login troubleshooting, and secure access to digital communication platforms.</li>
+      <li>Supported clients with Microsoft applications and digital systems.</li>
+      <li>Provided technical support for printing and scanning services, assisting users with printer setup, connectivity, document scanning, and troubleshooting hardware and software issues.</li>
+      <li>Assisted users with system access, password resets, and application support.</li>
+      <li>Designed, maintained, and updated company websites to support business operations and ensure content accuracy and availability.</li>
+      <li>Maintained digital records and supported business workflows using Microsoft Office and cloud-based applications.</li>
+      <li>Diagnosed and resolved desktop software issues while supporting end users across business operations.</li>
+    </ul>
+  </div>
+</div></section>
+
+
+
+<section id="services"><div class="wrap">
+  <div class="kicker">Services</div>
+  <h2>How I can help.</h2>
+  <p class="lead">Select the service you need and send an enquiry. Provide a short description of the work, your requirements and any relevant deadlines.</p>
+
+  <div class="services-layout">
+    <div class="services-list">
+      <div class="service-item"><strong>Web Development</strong><span>Responsive websites, landing pages, updates and maintenance.</span></div>
+      <div class="service-item"><strong>IT Support</strong><span>Desktop, software, account-access and general technical support.</span></div>
+      <div class="service-item"><strong>Essay Writing &amp; Research</strong><span>Research support, structuring, editing, proofreading and referencing assistance.</span></div>
+      <div class="service-item"><strong>Microsoft Office</strong><span>Word, PowerPoint, Excel and professional document support.</span></div>
+      <div class="service-item"><strong>Cybersecurity Support</strong><span>Security awareness, basic security guidance and cybersecurity documentation.</span></div>
+      <div class="service-item"><strong>Technical Documentation</strong><span>READMEs, user guides, reports, project documentation and technical content.</span></div>
+      <div class="service-item"><strong>OSINT &amp; Research</strong><span>Ethical open-source research, information gathering and structured findings.</span></div>
+      <div class="service-item"><strong>Business Analysis</strong><span>Requirements, process analysis, technology research and recommendations.</span></div>
+    </div>
+
+    <div class="service-form-card">
+      <div class="form-heading">
+        <span class="form-status">Service Enquiry</span>
+        <h3>Tell me what you need.</h3>
+        <p>Complete the form and your enquiry will be delivered to David.</p>
+      </div>
+
+      <form class="service-form" action="https://formsubmit.co/dcaguoru@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Service Enquiry — David Aguoru Portfolio">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="text" name="_honey" style="display:none">
+
+        <label for="client-name">Name</label>
+        <input id="client-name" name="Name" type="text" autocomplete="name" placeholder="Your name" required>
+
+        <label for="client-email">Email</label>
+        <input id="client-email" name="Email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+        <label for="service-required">Service required</label>
+        <select id="service-required" name="Service Required" required>
+          <option value="" selected disabled>Select a service</option>
+          <option>Web Development</option>
+          <option>IT Support</option>
+          <option>Essay Writing &amp; Research</option>
+          <option>Microsoft Office</option>
+          <option>Cybersecurity Support</option>
+          <option>Technical Documentation</option>
+          <option>OSINT &amp; Research</option>
+          <option>Business Analysis</option>
+        </select>
+
+        <label for="client-message">Project details</label>
+        <textarea id="client-message" name="Project Details" rows="7" placeholder="Tell me about the work you need, your requirements and any relevant deadline..." required></textarea>
+
+        <button class="service-submit" type="submit">Send Service Enquiry <span>→</span></button>
+        <p class="form-note">Your details are used only to respond to your service enquiry.</p>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<section id="credentials"><div class="wrap">
+  <div class="kicker">Credentials &amp; Professional Development</div>
+  <h2>Professional learning &amp; cybersecurity development.</h2>
+  <p class="lead">Selected credentials demonstrating continued development in cybersecurity awareness, phishing analysis and ethical IT practice.</p>
+  <div class="credential-grid">
+    <article class="credential-card">
+      <div class="credential-image-wrap"><img src="mastercard_cybersecurity_job_simulation.png" alt="Mastercard Cybersecurity Job Simulation certificate"></div>
+      <div class="credential-content">
+        <span class="credential-date">6 August 2026</span>
+        <h3>Cybersecurity Job Simulation</h3>
+        <p class="credential-org">Mastercard • Forage</p>
+        <p>Completed practical tasks involving the design of a phishing email simulation and interpretation of phishing simulation results.</p>
+      </div>
+    </article>
+    <article class="credential-card">
+      <div class="credential-image-wrap"><img src="bcs_ethical_it_professional.png" alt="BCS The Ethical IT Professional credential"></div>
+      <div class="credential-content">
+        <span class="credential-date">11 May 2026</span>
+        <h3>The Ethical IT Professional</h3>
+        <p class="credential-org">BCS — The Chartered Institute for IT</p>
+        <p>Completed the BCS online learning module focused on ethical professional practice in information technology.</p>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="kicker">Featured Work</div><h2>Projects built around real security problems.</h2>
+  <p class="lead">Two flagship GitHub projects demonstrate David's interest in fraud prevention, security operations, AI-assisted investigation and user-centred security design.</p>
+  <div class="projects">
+    <article class="panel project">
+      <div>
+        <img class="project-logo dtt-logo" src="dave_trace_tech_logo.png" alt="DaveTraceTech logo">
+        <div class="num">Project 01</div><h3>DaveTraceTech</h3>
+        <p>An early-stage cybersecurity and card-fraud prevention concept designed to help cardholders detect suspicious activity, secure affected cards, understand transaction-location context and organise useful evidence for authorised investigations.</p>
+        <div class="tags"><span class="tag">Card Fraud</span><span class="tag">Cybersecurity</span><span class="tag">MFA</span><span class="tag">Case Tracking</span><span class="tag">Fraud Alerts</span><span class="tag">HTML / CSS / JS</span></div>
+      </div>
+      <div><p>The current public repository documents a working front-end prototype using fictional data and clearly distinguishes proposed future capabilities from live banking or law-enforcement integrations.</p>
+      <a class="project-link" href="https://github.com/dcaguoru-cyber/davetracetech" target="_blank">Open DaveTraceTech on GitHub →</a></div>
+    </article>
+    <article class="panel project">
+      <div>
+        <img class="project-logo dapilot-logo" src="dapilot-logo.png" alt="DAPilot logo">
+        <div class="num">Project 02</div><h3>DAPilot</h3>
+        <p>An AI-assisted SOC investigation copilot concept focused on security-alert triage, IOC enrichment, MITRE ATT&CK mapping and security reporting — designed to make analyst workflows clearer and more efficient.</p>
+        <div class="tags"><span class="tag">SOC</span><span class="tag">AI-Assisted Analysis</span><span class="tag">Threat Intelligence</span><span class="tag">MITRE ATT&CK</span><span class="tag">Incident Response</span></div>
+      </div>
+      <div><p>The project reflects David's interest in practical blue-team tooling and in making investigation outputs useful for analysts, MSSPs, enterprises, government and training environments.</p>
+      <a class="project-link" href="https://github.com/dcaguoru-cyber/dapilot" target="_blank">Open DAPilot on GitHub →</a></div>
+    </article>
+  </div>
+</div></section>
+
+
+<section><div class="wrap">
+  <div class="kicker">Working Principles</div><h2>How David approaches security problems.</h2>
+  <div class="values">
+    <div class="value"><b>Security with clarity</b><span>Make technical risk understandable enough for users, analysts and decision-makers to act on it.</span></div>
+    <div class="value"><b>Evidence over assumptions</b><span>Separate indicators, investigative leads and verified conclusions — especially in fraud and attribution contexts.</span></div>
+    <div class="value"><b>Prototype, learn, improve</b><span>Turn concepts into tangible prototypes and documentation, then refine them through technical and business feedback.</span></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <div><div class="kicker">Connect</div><h2 style="margin-bottom:0">Interested in David's work?</h2><p>Explore the projects, follow ongoing development on GitHub, or connect on LinkedIn for cybersecurity, graduate, freelance and collaboration opportunities.</p></div>
+    <div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/david-aguoru-a01a0b240" target="_blank">LinkedIn ↗</a><a class="btn secondary" href="https://github.com/dcaguoru-cyber" target="_blank">GitHub ↗</a></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap footer-row">
+  <span>© 2026 David Aguoru. Personal portfolio.</span>
+  <div class="social"><a href="https://www.linkedin.com/in/david-aguoru-a01a0b240" target="_blank">LinkedIn</a><a href="https://github.com/dcaguoru-cyber" target="_blank">GitHub</a><a href="#top">Back to top ↑</a></div>
+</div></footer>
+
+<script>
+(function(){
+  const button = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('site-menu');
+  if (!button || !menu) return;
+
+  function closeMenu(){
+    button.classList.remove('active');
+    menu.classList.remove('open');
+    button.setAttribute('aria-expanded','false');
+    button.setAttribute('aria-label','Open navigation menu');
+  }
+
+  button.addEventListener('click', function(){
+    const isOpen = menu.classList.toggle('open');
+    button.classList.toggle('active', isOpen);
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  });
+
+  menu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape') closeMenu();
+  });
+
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 900) closeMenu();
+  });
+})();
+</script>
+
+</body>
+</html>
